@@ -1,76 +1,69 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
+
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Projeto de Teste</title>
-  <link rel="stylesheet" href="/CSS/meuStilo.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <title>Document</title>
+
+  <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet">
+
+
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <!-- <div class="mt-3 p-3 bg-primary text-white text-center rounded">
-   <h2>Meu Primeiro site com bootstranp</h2>
-   <p>Programador:.Etevaldo S Carvalho</p>
-  </div> -->
-  
-  <div class="container">
-    <div class="content">
-      <div class="accordion_item" style="background-color: #c4b5fd;">
-        <div class="accordion_header">
-          <span>
-            HTML
-          </span>
-          <div class="icon">
-            +
-          </div>
-        </div>
-  
-        <div class="accordion_content">
-          <p>
-            HTML (Linguagem de Marcação de HiperTexto) é o bloco de construção mais básico da web.
-            Define o significado e a estrutura do conteúdo da web.
-          </p>
-        </div>
+  <main>
+    <div class="resume">
+      <div>
+        Entradas: R$
+        <span class="incomes">0.00</span>
       </div>
-      <div class="accordion_item" style="background-color: #bef264;">
-        <div class="accordion_header">
-          <span>
-            JavaScript
-          </span>
-          <div class="icon">
-            +
-          </div>
-        </div>
-  
-        <div class="accordion_content">
-          <p>
-            JavaScript® (às vezes abreviado para JS) é uma linguagem leve,
-            interpretada e baseada em objetos com funções de primeira classe,
-            mais conhecida como a linguagem de script para páginas Web,
-            mas usada também em vários outros ambientes sem browser, tais como node.js,
-            Apache CouchDB e Adobe Acrobat.
-        </div>
+      <div>
+        Saídas: R$
+        <span class="expenses">0.00</span>
       </div>
-      <div class="accordion_item" style="background-color: #6ee7b7;">
-        <div class="accordion_header">
-          <span>
-            CSS
-          </span>
-          <div class="icon">
-            +
-          </div>
-        </div>
-  
-        <div class="accordion_content">
-          <p>
-            CSS (Cascading Style Sheets ou Folhas de Estilo em Cascata)
-            é uma linguagem de estilo (en-US) usada para descrever a apresentação de um documento escrito em HTML.
-          </p>
-        </div>
+      <div>
+        Total: R$
+        <span class="total">0.00</span>
       </div>
     </div>
-  </div>
-  <script src="/js/app.js"></script>
+    <div class="newItem">
+      <div class="divDesc">
+        <label for="desc">Descrição</label>
+        <input type="text" id="desc" />
+      </div>
+      <div class="divAmount">
+        <label for="amount">Valor</label>
+        <input type="number" id="amount" />
+      </div>
+      <div class="divType">
+        <label for="type">Tipo</label>
+        <select id="type">
+          <option>Entrada</option>
+          <option>Saída</option>
+        </select>
+      </div>
+      <button id="btnNew">Incluir</button>
+    </div>
+    <div class="divTable">
+      <table>
+        <thead>
+          <tr>
+            <th>Descrição</th>
+            <th class="columnAmount">Valor</th>
+            <th class="columnType">Tipo</th>
+            <th class="columnAction"></th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+      </div>
+  </main>
+
+  <script src="script.js"></script>
 </body>
+
 </html>
